@@ -1,8 +1,8 @@
-#ifndef PERSON_H // Çì´õÆÄÀÏÀÇ Áßº¹ Á¤ÀÇ¸¦ ¸·±âÀ§ÇÔ
+#ifndef PERSON_H // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ ï¿½ï¿½ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define PERSON_H 
 #include <iostream>
 
-// using ¼±¾ð
+// using ï¿½ï¿½ï¿½ï¿½
 using std::string; 
 using std::istream; 
 using std::ostream;
@@ -10,13 +10,13 @@ using std::ostream;
 class Person
 {
 public:
-	Person(); // µðÆúÆ® »ý¼ºÀÚ
-	Person(string theName); // 1°³ÀÇ ÀÎÀÚ¸¦ °¡Áø »ý¼ºÀÚ
-	Person(const Person& theobject); // º¹»ç »ý¼ºÀÚ
-	string getName() const; // ¸â¹ö º¯¼ö name¿¡ ´ëÇÑ getterÇÔ¼ö
-	Person& operator = (const Person& rtSide); // ´ëÀÔ ¿¬»êÀÚ
-	friend istream& operator >> (istream& inStream, Person& personObject); // >> ¿À¹ö·Îµù ¿¬»êÀÚ
-	friend ostream& operator << (ostream& outStream, const Person& personObject); // << ¿À¹ö·Îµù ¿¬»êÀÚ
+	Person(); // ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Person(string theName); // 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Person(const Person& theobject); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	string getName() const; // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ nameï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ getterï¿½Ô¼ï¿½
+	Person& operator = (const Person& rtSide); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	friend istream& operator >> (istream& inStream, Person& personObject); // >> ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	friend ostream& operator << (ostream& outStream, const Person& personObject); // << ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 private:
 	string name;
 };
